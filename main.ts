@@ -13,13 +13,7 @@ const sql = postgres(PGSQL_URL, {
 const handler = async (req: Request) => {
   const result = await sql`select 1 as ret`
 
-  const resp = new Response(JSON.stringify(result[0]), {
-    headers: {
-      'Content-Type': 'text/html;charset=utf-8'
-    }
-  })
-
-  return resp
+  return Response.json(result)
 }
 
 if (typeof Deno != 'undefined') Deno.serve(handler)
