@@ -1,0 +1,16 @@
+{
+  "name": "cloudflare-serverless",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy --minify=true --node-compat=false --no-bundle=true",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "postgres": "^3.4.5"
+  }
+}
