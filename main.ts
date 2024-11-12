@@ -5,7 +5,8 @@ let PGSQL_URL = 'postgresql://postgres.xxx:xxx@aws-0-ap-southeast-1.pooler.supab
 // PGSQL_URL = 'postgresql://xxx:xxx@us-west-2.sql.xata.sh/app-ore:main?sslmode=require'
 
 const sql = postgres(PGSQL_URL, {
-  max: 30,
+  // max: 6, // xata: https://xata.io/docs/concepts/pricing#concurrency-limit
+  max: 30, // https://supabase.com/docs/guides/platform/compute-and-disk#postgres-replication-slots-wal-senders-and-connections
   idle_timeout: 15000,
   connect_timeout: 7000,
 })
