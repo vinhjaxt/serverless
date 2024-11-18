@@ -9,7 +9,7 @@ const sql = postgres(PGSQL_URL, {
   max: 30, // supabase: https://supabase.com/docs/guides/platform/compute-and-disk#postgres-replication-slots-wal-senders-and-connections
   idle_timeout: 15000,
   connect_timeout: 7000,
-  /* Aiven custom CA
+  /* Aiven custom CA, must remove ?sslmode=require in DSN
     ssl: {
         caCerts: [`-----BEGIN CERTIFICATE-----
 MIIEQTCCAqmgAwIBAgIUQIi5+rjPukyUemd/4daTLOHSb5MwDQYJKoZIhvcNAQEM
