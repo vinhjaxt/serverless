@@ -42,7 +42,7 @@ oqdu2OA6clPjvqj0bm5zca5MP2OlIPtiKE76KrV78WCWKn8Bcg==
 
 const handler = async (req: Request) => {
   if (req.headers.get("upgrade") != "websocket")
-    return Response.json({ error: "upgrade websocket" }, { status: 400 })
+    return Response.json({ error: "upgrade websocket" }, { status: 426 })
 
   const url = new URL(req.url, 'a://b')
 
