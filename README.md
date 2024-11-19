@@ -1,5 +1,5 @@
 # Serverless
-[Serverless] Deno backend
+[Serverless] Deno/Cloudflare backend, Postgres Database
 
 # Postgres database SaaS
 - **Supabase**: https://supabase.com/dashboard - `30 max_connections` - [link](https://supabase.com/docs/guides/platform/compute-and-disk#postgres-replication-slots-wal-senders-and-connections)
