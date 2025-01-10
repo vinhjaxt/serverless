@@ -11,3 +11,6 @@
 - **Deno deploy**: https://dash.deno.com - `1M/month, 50ms CPU` - [link](https://deno.com/deploy/pricing)
 - **Supabase**: https://supabase.com/dashboard - `Unlimited API requests, 2s CPU` - [link](https://supabase.com/docs/guides/functions/limits#runtime-limits)
 - **Cloudflare Workers**: https://dash.cloudflare.com - `100,000 reqs/d, 1000 reqs/m, 10 ms CPU` - [link](https://developers.cloudflare.com/workers/platform/limits/#worker-limits)
+
+# Optimize
+https://hub.docker.com/r/bitnami/pgbouncer/
